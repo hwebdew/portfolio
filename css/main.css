@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+html, body {
+    color: #333;   
+}
+
+/* header */
+header {
+    height: 80px;
+    line-height: 80px;
+}
+header div {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header div h1 a {
+    font-size: 25px;
+}
+header div a {
+    font-size: 20px;
+}
+
+/* .main_visual */
+.main_visual {
+    width: 100%; 
+    height: calc(100vh - 80px);
+    /* 높이 : 브라우저전체높이 - 헤더값 */
+    position: relative;
+}
+.main_visual figure {
+    width: 100%;
+    height: 100%;
+}
+.main_visual figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual .title {
+    width: 1280px; 
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* 변형 : 이동x축 -> 본인이 가진 너비의 반만큼 역으로 이동 */
+
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.main_visual .title h2 {
+    width: 100%;
+    font-size: 60px;
+}
+.main_visual .title p {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.main_visual .title a {
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: royalblue;
+    text-align: center;
+}
+
+/* .best_v */
+.best_v {
+    padding: 100px 0;
+}
+.best_v .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.best_v .title h3 {
+    font-size: 40px;
+}
+.best_v .title p {
+    font-size: 20px;
+}
+.best_v .cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 
+    가로 : 1280px
+    1280을 화면 가운데 배치
+    유튜브, info 가로로 나열
+    양끝에 붙여서 정렬
+    수직가운데 정렬
+    */
+}
+.best_v .cont .youtube {
+    width: 50%;
+}
+.best_v .cont .youtube .youtube_in {
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 화면비율 16:9 */
+    position: relative;
+}
+.best_v .cont .youtube .youtube_in iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.best_v .cont .info {
+    width: 45%;
+}
+.best_v .cont .info h4 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.best_v .cont .info p:nth-of-type(2) {
+    /* 외부여백 위20px 아래 40px */
+    margin: 20px 0 40px;
+}
+.best_v .cont .info dl {
+    display: flex;
+    margin-bottom: 10px;
+}
+.best_v .cont .info dl dt {
+    font-weight: bold;
+    width: 100px;
+}
+.best_v .cont .info ul {
+    display: flex;
+}
+.best_v .cont .info ul li a {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid royalblue;
+    box-sizing: border-box;
+    /* 테두리 : 1px 직선 색상 */
+    /* 테두리를 포함해서 높이(45px)가 잡힐 수 있도록 설정
+     */
+    display: block;
+    padding: 0 25px;
+    margin-right: 10px;
+}
+.best_v .cont .info ul li:nth-child(1) a {
+    background-color: royalblue;
+    color: #fff;
+}
