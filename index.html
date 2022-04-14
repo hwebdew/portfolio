@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>하수정 포트폴리오</title>
+    <!-- 팬시박스 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="css/main.css" rel="stylesheet" />
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <!-- 팬시박스js --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function(){
+            //탭메뉴 
+            $('.motion ul li').click(function(){
+                $('.motion ul li').removeClass('on');
+                $(this).addClass('on');
+
+                $('.motion .list_cont').removeClass('on');
+                $('.motion .list_cont').eq($(this).index()).addClass('on');
+            });//click end
+        });
+    </script>
+    
 </head>
 <body>
     <header>
@@ -67,5 +88,235 @@
             </div><!-- .info end -->
         </div><!-- .cont end -->
     </section><!-- .best_v end -->
+
+    <section class="motion">
+        <div class="title">
+            <h3>MOTION GRAPHICS</h3>
+            <p>비디오, 애니메이션 기술을 이용한 영상제작</p>
+        </div><!-- .title end -->
+        <ul class="list">
+            <li class="on">게임</li>
+            <li>홍보영상</li>
+            <li>인포그래픽</li>
+            <li>브이로그</li>
+            <li>뮤비티저</li>
+        </ul><!-- .list end -->
+        <div class="motion_cont">
+            <div class="list_cont on"><!-- 게임 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6-OgI1KwYKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->  
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>우주여행 입체 기념사진</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:05:31</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=6-OgI1KwYKw">https://www.youtube.com/watch?v=6-OgI1KwYKw</a>
+                            </dd>
+                        </dl>
+                    </div><!-- .info e -->
+                </div><!-- .items end 1 -->
+
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6-OgI1KwYKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->  
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>우주여행 입체 기념사진</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:05:31</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=6-OgI1KwYKw">영상보기</a>
+                            </dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 2 -->
+            </div><!-- .list_cont end 게임  -->
+
+            <div class="list_cont"><!-- 홍보영상 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/stNPuDtflqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->  
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>우주여행 입체 기념사진</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:05:31</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=6-OgI1KwYKw">영상보기</a>
+                            </dd>
+                        </dl>
+                    </div><!-- .info e -->
+                </div><!-- .items end 1 -->
+
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/stNPuDtflqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->  
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
+                        <h4>우주여행 입체 기념사진</h4>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>Premiere Pro, After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>러닝타임</dt>
+                            <dd>00:05:31</dd>
+                        </dl>
+                        <dl>
+                            <dt>배경음악</dt>
+                            <dd>Juice - Roa</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL주소</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=6-OgI1KwYKw">영상보기</a>
+                            </dd>
+                        </dl>
+                    </div><!-- .info end -->
+                </div><!-- .items end 2 -->
+            </div><!-- .list_cont end 홍보영상  -->
+
+        </div><!-- .motion_cont end -->
+    </section><!-- .motion end -->
+    
+    <section class="g_ver05">
+        <div class="title">
+            <h3>GRAPHIC DESIGN</h3>
+            <p>디자인프로그램을 사용하여 만든 그래픽 디자인</p>
+            <em>클릭하시면 원본이미지를 보실 수 있습니다.</em>
+        </div><!-- .title end -->
+        <div class="cont">
+            <a class="items" href="https://via.placeholder.com/300x500" data-fancybox="images">
+                <figure>
+                    <img src="https://via.placeholder.com/300x500/333/?text=image" alt="" />        
+                </figure>
+                <div class="info">
+                    <p>#보정 / 포토샵</p>
+                    <h4>제작된 이미지 제목</h4>
+                </div><!-- .info end  -->
+            </a><!-- .items end 1 -->
+
+            <a class="items" href="https://via.placeholder.com/300x500" data-fancybox="images">
+                <figure>
+                    <img src="https://via.placeholder.com/300x500/333/?text=image" alt="" />        
+                </figure>
+                <div class="info">
+                    <p>#보정 / 포토샵</p>
+                    <h4>제작된 이미지 제목</h4>
+                </div><!-- .info end  -->
+            </a><!-- .items end 2 -->
+
+        </div><!-- .cont end -->
+    </section><!-- .g_ver05 end -->
+
+    <section class="about">
+        <div class="cont">
+            <figure>
+                <img src="https://via.placeholder.com/450x500/?text=image" alt="" />
+            </figure>
+            
+            <div class="info">
+                <div>
+                    <h4>PROFILE</h4>
+                    <p>이름 / name</p>
+                    <p>1900.00.00</p>
+                    <p><a href="tel:010-8563-7815">010.8563.7815</a></p>
+                    <p>부산광역시 00구</p>
+                </div>
+
+                <div>
+                    <h4>EDUCATION</h4>
+                    <dl>
+                        <dt>2021.12 ~ 2022.05</dt>
+                        <dd>그린컴퓨터아카데미<br />
+                        [멀티미디어콘텐츠제작]영상편집 수료</dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <h4>LICENSE</h4>
+                    <dl>
+                        <dt>2000.00</dt>
+                        <dd>자격증 이름</dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <h4>SKILL</h4>
+                    <p>프리미더프로, 에프터이펙트, 000000</p>
+                    <p>포토샵, 일러스트레이터, XD, 000</p>
+                    <p>HTML, CSS</p>
+                    <p>추가 추가 추가</p>
+                </div>
+            </div><!-- .info -->
+        </div><!-- .cont end -->
+    </section><!-- .about end -->
+
+    <footer>
+        <h3>하수정 HASUJEONG</h3>
+        <ul>
+            <li><a href="#">유튜브채널</a></li>
+            <li><a href="tel:010-8563-7815">010.8563.7815</a></li>
+            <li>카카오아이디 : dfjakljfei</li>
+            <li>이메일주소</li>
+        </ul>
+        <p>copyright 2022. 하수정 all rights reserved.<br />
+            본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.
+        </p>
+    </footer>
 </body>
 </html>
