@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+html, body {
+    color: #333;
+    min-width: 1280px;
+}
+
+/* header */
+header {
+    height: 80px;
+    line-height: 80px;
+}
+header div {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header div h1 a {
+    font-size: 25px;
+}
+header div a {
+    font-size: 20px;
+}
+
+/* .main_visual */
+.main_visual {
+    width: 100%; 
+    height: calc(100vh - 80px);
+    /* 높이 : 브라우저전체높이 - 헤더값 */
+    position: relative;
+}
+.main_visual figure {
+    width: 100%;
+    height: 100%;
+}
+.main_visual figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual .title {
+    width: 1280px; 
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /* 변형 : 이동x축 -> 본인이 가진 너비의 반만큼 역으로 이동 */
+
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.main_visual .title h2 {
+    width: 100%;
+    font-size: 60px;
+}
+.main_visual .title p {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.main_visual .title a {
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: royalblue;
+    text-align: center;
+    display: block;
+}
+
+/* .best_v */
+.best_v {
+    /* background: url('../images/파일명.확장자명') ; */
+    padding: 100px 0;
+}
+.best_v .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.best_v .title h3 {
+    font-size: 40px;
+}
+.best_v .title p {
+    font-size: 20px;
+}
+.best_v .cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 
+    가로 : 1280px
+    1280을 화면 가운데 배치
+    유튜브, info 가로로 나열
+    양끝에 붙여서 정렬
+    수직가운데 정렬
+    */
+}
+.best_v .cont .youtube {
+    width: 50%;
+}
+.best_v .cont .youtube .youtube_in {
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 화면비율 16:9 */
+    position: relative;
+}
+.best_v .cont .youtube .youtube_in iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.best_v .cont .info {
+    width: 45%;
+}
+.best_v .cont .info h4 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.best_v .cont .info p:nth-of-type(2) {
+    /* 외부여백 위20px 아래 40px */
+    margin: 20px 0 40px;
+}
+.best_v .cont .info dl {
+    display: flex;
+    margin-bottom: 10px;
+}
+.best_v .cont .info dl dt {
+    font-weight: bold;
+    width: 100px;
+}
+.best_v .cont .info ul {
+    display: flex;
+}
+.best_v .cont .info ul li a {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid royalblue;
+    box-sizing: border-box;
+    /* 테두리 : 1px 직선 색상 */
+    /* 테두리를 포함해서 높이(45px)가 잡힐 수 있도록 설정
+     */
+    display: block;
+    padding: 0 25px;
+    margin-right: 10px;
+}
+.best_v .cont .info ul li:nth-child(1) a {
+    background-color: royalblue;
+    color: #fff;
+}
+
+/* .motion */
+.motion {
+    padding: 100px 0;
+}
+.motion .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.motion .title h3 {
+    font-size: 45px;
+}
+.motion .title p {
+    font-size: 20px;
+}
+.motion .list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.motion .list li {
+    cursor: pointer;
+    /* 마우스모양 : 손모양 */
+
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    padding: 0 30px;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+.motion .list li.on {
+    box-shadow: 2px 3px 15px rgba(255, 0, 0, 0.4);
+    /* 그림자 : x축 y축 블러 색상 */
+    background-color: rgb(255, 50, 50);
+    color: #fff;
+    border: 0;
+}
+.motion .motion_cont .list_cont {
+    width: 1280px;
+    margin: 0 auto;
+    /* display: flex; */
+    display: none; 
+    justify-content: space-between;
+}
+.motion .motion_cont .list_cont.on {
+    display: flex;
+}
+.motion .motion_cont .list_cont .items {
+    width: 49%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* 유튜브 영상 크기 조절 */
+.youtube {
+    width: 100%;
+}
+.youtube .youtube_in {
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 화면비율 16:9 비율 */
+    position: relative;
+}
+.youtube .youtube_in iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.motion .list_cont .items .info {
+    padding: 30px;
+}
+.motion .list_cont .items .info h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.motion .list_cont .items .info dl {
+    display: flex;
+    margin-top: 10px;
+}
+.motion .list_cont .items .info dl dt {
+    width: 20%;
+    font-weight: bold;
+}
+.motion .list_cont .items .info dl dd:hover a {
+    text-decoration: underline;
+}
+
+/* .g_ver05 */
+.g_ver05 {
+    background-color: #eee;
+    padding: 100px 0;
+}
+.g_ver05 .title {
+    text-align: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+.g_ver05 .title h3 {
+    font-size: 45px;
+}
+.g_ver05 .title p {
+    font-size: 20px;
+}
+.g_ver05 .title em {
+    font-size: 13px;
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: block;
+    /* 글자크기 : 13px
+    텍스트 오른쪽 정렬
+    외부여백 위로 40px
+    외부여백 아래로 10px */
+}
+
+.g_ver05 .cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.g_ver05 .cont .items {
+    width: 49%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    /* 한줄일 때 수직정렬 : 가운데 */
+}
+.g_ver05 .cont .items figure {
+    width: 60%;
+    height: 500px;
+    /* 가로 : 60%
+    세로 : 500px */
+}
+.g_ver05 .cont .items figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* figure가 가진 가로 세로영역 딱 맞게 넣고 비율에 맞춰 전체 덮이도록 설정 */
+}
+.g_ver05 .cont .items .info {
+    width: 40%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    /* 가로 : 40% 
+    내부여백-왼쪽 20px;
+    여백을 포함해서 가로값 잡히도록 설정
+    */
+}
+.g_ver05 .cont .items .info p {
+    /* 글자크기 : 14px */
+    font-size: 14px;
+}
+.g_ver05 .cont .items .info h4 {
+    /* 다른컨텐츠에 있는 h4크기와 동일하게 작성 */
+    font-size: 30px;
+}
+
+/* .about */
+.about {
+    padding: 100px 0;
+}
+.about .cont {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .cont figure {
+    width: 30%;
+    height: 500px;
+}
+.about .cont figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about .cont .info {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .cont .info div {
+    width: 45%;
+    margin: 20px 0;
+    /* background-color: antiquewhite;// */
+
+}
+.about .cont .info div h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about .cont .info div p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.about .cont .info div dl dt {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about .cont .info div dl dd {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+footer ul li {
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin: 10px auto;
+    /* 가로 : 220px
+    세로 : 50px
+    글자 수직가운데정렬 
+    테두리 : 1px solid 색상
+    모서리곡선 : 50px
+    외부여백 :  위아래 10px 좌우 자동 */
+}
+footer ul li a {color: #fff;}
+footer ul li:first-child {
+    background-color: royalblue;
+    font-weight: bold;
+}
+footer ul li:first-child a {
+    /* 글자색상 조절 */
+}
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.615);
+}
+
+
+
+
+
