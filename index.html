@@ -7,13 +7,27 @@
     <title>하수정 포트폴리오</title>
     <!-- 팬시박스 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet" />
 
+
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    
     <!-- 팬시박스js --> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         $(function(){
             //탭메뉴 
@@ -24,6 +38,7 @@
                 $('.motion .list_cont').removeClass('on');
                 $('.motion .list_cont').eq($(this).index()).addClass('on');
             });//click end
+            AOS.init();
         });
     </script>
     
@@ -42,9 +57,11 @@
             <img src="https://via.placeholder.com/1920x1000/333/333/?text=image" />  
         </figure>
         <div class="title">
-            <h2>MOTION GRAPHIC DESINGER</h2>
-            <p>HA SU JEONG</p>
-            <a href="#">유튜브채널</a>
+            <div class="animate__animated animate__slideInDown">
+                <h2>MOTION GRAPHIC DESINGER</h2>
+                <p>HA SU JEONG</p>
+                <a href="#">유튜브채널</a>
+            </div>
         </div><!-- .title end -->
     </section><!-- .main_visual end -->
 
@@ -54,13 +71,13 @@
             <p>내가 뽑은 베스트 작품</p>
         </div><!-- .title end -->
         <div class="cont">
-            <div class="youtube">
+            <div class="youtube"  data-aos="fade-left">
                 <div class="youtube_in">
                     <!-- 유튜브 연결 -->
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8dbPJkDLuDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div><!-- .youtube_in end -->
             </div><!-- .youtube end -->
-            <div class="info">
+            <div class="info" data-aos="fade-right">
                 <strong>#브이로그</strong>
                 <h4>영상제목넣기</h4>
                 <p>편집, 촬영, 연출, 디자인, 특수효과 / 모작</p>

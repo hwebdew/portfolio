@@ -72,10 +72,12 @@ header div a {
     line-height: 50px;
     background-color: royalblue;
     text-align: center;
+    display: block;
 }
 
 /* .best_v */
 .best_v {
+    /* background: url('../images/파일명.확장자명') ; */
     padding: 100px 0;
 }
 .best_v .title {
