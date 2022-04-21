@@ -5,7 +5,7 @@ li {list-style: none;}
 a {text-decoration: none; color: #333;}
 html, body {
     color: #333;
-    min-width: 1280px;
+    /* min-width: 1280px; */
 }
 
 /* header */
@@ -401,6 +401,80 @@ footer p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.615);
 }
+
+
+
+/* 반응형 제작
+해상도 가로 960px 이하일 때 적용되는 스타일  */
+
+@media screen and (max-width: 1280px) {
+    /* 브라우저 너비 1280px이하일 때 스타일 */
+    header div {width: 100%;}
+    .main_visual .title {width: 100%;}
+    .best_v .cont {width: 100%;}
+    .motion .motion_cont .list_cont {width: 100%;}
+    .g_ver05 .cont {width: 100%;}
+    .g_ver05 .title {width: 100%;}
+    .about .cont {width: 100%;}
+} /* 해상도 1280px이하 */
+
+@media screen and (max-width: 960px) {
+    
+    .best_v .cont {flex-wrap: wrap;}
+    .best_v .cont .youtube {width: 100%;}
+    .best_v .cont .info {
+        width: 90%; 
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .best_v .cont .info p:nth-of-type(2) {
+        margin: 10px 0 20px;
+    }
+
+    .motion .list {
+        flex-wrap: wrap;
+    }
+    .motion .list li {
+        margin-bottom: 10px;
+    }
+    .motion .motion_cont .list_cont.on {
+        flex-wrap: wrap;
+    }
+    .motion .motion_cont .list_cont .items {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .g_ver05 .cont {
+        flex-wrap: wrap;
+    }
+    .g_ver05 .cont .items {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .about .cont {
+        flex-wrap: wrap;
+    }
+    .about .cont figure {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .about .cont .info {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}/* 해상도 960px 이하 */
+
+
+
 
 
 
